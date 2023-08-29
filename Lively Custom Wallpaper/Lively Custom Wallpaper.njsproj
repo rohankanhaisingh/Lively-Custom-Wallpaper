@@ -1,0 +1,167 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Lively Custom Wallpaper</Name>
+    <RootNamespace>Lively Custom Wallpaper</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6d795fbd-8964-483f-993b-a20428c98432</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>src\index.ts</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="LivelyProperties.json" />
+    <Content Include="lively_t.jpg" />
+    <Content Include="dist\index.js" />
+    <Content Include="dist\index.js.map" />
+    <Content Include="data\background-video.mp4" />
+    <Content Include="license.txt" />
+    <Content Include="LivelyInfo.json" />
+    <Content Include="data\style.css" />
+    <Content Include="data\Syne-VariableFont_wght.ttf" />
+    <Content Include="src\libs\Stinky2D-master\segments\spacerock01.json" />
+    <Content Include="src\libs\Stinky2D-master\shaders\cube.wgsl" />
+    <Content Include="src\libs\Stinky2D-master\shaders\cube_lite.gs" />
+    <Content Include="src\libs\Stinky2D-master\shaders\test\fragment.glsl" />
+    <Content Include="src\libs\Stinky2D-master\shaders\test\vertex.glsl" />
+    <Content Include="src\libs\Stinky2D-master\tsconfig.json" />
+    <Content Include="webpack.config.js" />
+    <None Include="src\index.ts" />
+    <Content Include="index.html" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="data\" />
+    <Folder Include="src\" />
+    <Folder Include="src\libs\" />
+    <Folder Include="src\libs\Stinky2D-master\" />
+    <Folder Include="src\libs\Stinky2D-master\classes\" />
+    <Folder Include="src\libs\Stinky2D-master\constants\" />
+    <Folder Include="src\libs\Stinky2D-master\functions\" />
+    <Folder Include="src\libs\Stinky2D-master\segments\" />
+    <Folder Include="src\libs\Stinky2D-master\shaders\" />
+    <Folder Include="src\libs\Stinky2D-master\shaders\test\" />
+    <Folder Include="src\libs\Stinky2D-master\stinky-script\" />
+    <Folder Include="src\libs\Stinky2D-master\stinky-script\functions\" />
+    <Folder Include="src\libs\Stinky2D-master\test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\config.ts" />
+    <TypeScriptCompile Include="src\lively-event-listeners.ts" />
+    <TypeScriptCompile Include="src\render-components.ts" />
+    <TypeScriptCompile Include="src\rendering.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\audio-system-2d.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\camera.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\circle.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\collection.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\controller.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\geometry-2d.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\linesystem.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\looper.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\offscreen-renderer.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\physics-2d.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\plugins.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\rectangle.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\renderer.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\renderobject.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\scene.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\spritesheet-controller.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\classes\text.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\constants\colors.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\constants\global.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\functions\easings.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\functions\keyboard.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\functions\math.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\functions\uid.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\functions\utilities.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\index.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\stinky-script\functions\Get-Program.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\stinky-script\inbuilt-function.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\stinky-script\stage.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\3d-test.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Animating Coloured Tiles.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Animating Sprites.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Camera Controls.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Creating And Displaying Custom Plugins.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Customizing Audio Processing Nodes.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Displaying Fireworks.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Dynamic Audio.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Dynamic Moving Audio Sources.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Emitting Particles.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Picking In-Scene Colours.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Post Processing.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Rain Animation.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Receiving Keyboard Input.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Render Single Components.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Rendering Circles.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Setting Events On Renderobjects.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Using A Game Controller.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Using Collections.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Using Perspective Transformations.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\Using PlanckJS.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\test\WebGPU Testing.ts" />
+    <TypeScriptCompile Include="src\libs\Stinky2D-master\typings.ts" />
+    <TypeScriptCompile Include="src\typings.ts" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

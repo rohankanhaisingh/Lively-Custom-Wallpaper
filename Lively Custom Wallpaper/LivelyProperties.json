@@ -1,0 +1,54 @@
+{
+  "framerate": {
+    "text": "Frame rate",
+    "type": "slider",
+    "value": 60,
+    "min": 1,
+    "max": 144
+  },
+  "meterBorderWidth": {
+    "text": "Meter border-width",
+    "type": "slider",
+    "value": 3,
+    "min": 1,
+    "max": 10
+  },
+  "meterBaseRadius": {
+    "text": "Meter base-radius",
+    "type": "slider",
+    "value": 100,
+    "min": 10,
+    "max": 500
+  },
+  "meterPadding": {
+    "text": "Meter padding",
+    "type": "slider",
+    "value": 30,
+    "min": 1,
+    "max": 100
+  },
+  "strokeColor": {
+    "text": "Meter stroke-color",
+    "type": "color",
+    "value": "#FFFFFF"
+  },
+  "meterGlow": {
+    "text": "Meter stroke-glow",
+    "type": "checkbox",
+    "value": false
+  },
+  "cameraSmoothing": {
+    "text": "Camera smoothing",
+    "type": "slider",
+    "value": 5,
+    "min": 0,
+    "max": 100
+  },
+  "cameraPullDistance": {
+    "text": "Camera pull distance",
+    "type": "slider",
+    "value": 40,
+    "min": 1,
+    "max": 500
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "AppVersion": "0.9.6.0",
+  "Title": "Epic looking clock",
+  "Thumbnail": "lively_t.jpg",
+  "Preview": "lively_p.gif",
+  "Desc": "Live updating clock made with Stinky2D.",
+  "Author": "Rohan Kanhaisingh",
+  "License": null,
+  "Contact": null,
+  "Type": 1,
+  "FileName": "index.html",
+  "Arguments": null,
+  "IsAbsolutePath": false
+}
