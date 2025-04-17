@@ -46,5 +46,3 @@ The wallpaper is built using modern front-end tools:
 This is an open-source, non-commercial project created for educational and creative purposes. Feel free to fork, modify, and enhance it for your own use.
 
 ---
-
-Let me know if you'd like this turned into a downloadable `.md` file!
